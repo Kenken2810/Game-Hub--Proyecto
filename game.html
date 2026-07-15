@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GameHub | Catálogo</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==================================================
+                    LOADER
+===================================================-->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+
+            GH
+
+        </div>
+
+        <h1>GAMEHUB</h1>
+
+        <p class="loader-subtitle">
+
+            Cargando catálogo...
+
+        </p>
+
+        <p id="loader-text">
+
+            Inicializando...
+
+        </p>
+
+        <div class="progress">
+
+            <div id="progress-bar"
+                 class="progress-bar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==================================================
+                    HEADER
+===================================================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <span>GameHub</span>
+
+        </a>
+
+       <ul class="menu">
+
+    <li><a href="index.html">Inicio</a></li>
+
+    <li><a href="game.html">Catálogo</a></li>
+
+    <li>
+        <a href="#favoritos">
+            Favoritos ❤️
+        </a>
+    </li>
+
+</ul>
+
+    </nav>
+
+</header>
+
+<!--==================================================
+                    HERO
+===================================================-->
+
+<section class="hero hero-catalogo">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="badge">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            Biblioteca GameHub
+
+        </span>
+
+        <h1>
+
+            Explora nuestro catálogo
+
+        </h1>
+
+        <p>
+
+            Busca videojuegos, revisa sus detalles,
+            agrégalos a favoritos y accede a GameVerse
+            para comprar tu licencia.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                    BUSCADOR
+===================================================-->
+
+<section class="catalogo">
+
+    <div class="section-title">
+
+        <span>
+
+            CATÁLOGO
+
+        </span>
+
+        <h2>
+
+            Encuentra tu próximo juego
+
+        </h2>
+
+    </div>
+
+    <div class="busqueda">
+
+        <input
+            type="text"
+            id="buscarJuego"
+            placeholder="Buscar videojuego...">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+    </div>
+
+    <div class="filtros">
+
+        <button
+            class="filtro activo"
+            data-genero="Todos">
+
+            Todos
+
+        </button>
+
+        <button
+            class="filtro"
+            data-genero="RPG">
+
+            RPG
+
+        </button>
+
+        <button
+            class="filtro"
+            data-genero="Sandbox">
+
+            Sandbox
+
+        </button>
+
+        <button
+            class="filtro"
+            data-genero="Acción">
+
+            Acción
+
+        </button>
+
+    </div>
+
+    <div
+        id="contenedorJuegos"
+        class="contenedor-cards">
+
+    </div>
+
+</section>
+
+<!-- ================= FAVORITOS ================= -->
+
+<section id="favoritos" class="catalogo favoritos-seccion">
+
+
+    <h2>
+
+        Mis videojuegos favoritos ❤️
+
+    </h2>
+
+
+
+    <div 
+    id="contenedorFavoritos" 
+    class="contenedor-cards">
+
+
+    </div>
+
+
+</section>
+
+<!--==================================================
+                    MODAL
+===================================================-->
+
+<div id="modalJuego"
+     class="modal">
+
+    <div class="modal-contenido">
+
+        <button
+            id="cerrarModal"
+            class="cerrar-modal">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div id="contenidoModal">
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!--==================================================
+            NOTIFICACIÓN TOAST
+===================================================-->
+
+<div id="toast"
+     class="toast">
+
+</div>
+
+
+<!--==================================================
+        PANTALLA REDIRECCIÓN COMPRA
+===================================================-->
+
+<div id="pantallaCompra"
+     class="pantalla-compra">
+
+    <div class="compra-box">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h2>
+
+            Conectando con GameVerse...
+
+        </h2>
+
+        <p>
+
+            Redirigiendo a la tienda para completar tu compra.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!--==================================================
+                    FOOTER
+===================================================-->
+
+<footer>
+
+    <div class="footer-content">
+
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <span>
+
+                GameHub
+
+            </span>
+
+        </div>
+
+
+        <p>
+
+            © 2026 GameHub |
+            Proyecto académico
+
+        </p>
+
+
+        <div class="footer-redes">
+
+
+            <a href="#">
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<script src="game.js"></script>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GameHub | Descubre tu próximo videojuego</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==================================================
+                    LOADER
+===================================================-->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+
+            GH
+
+        </div>
+
+        <h1>GAMEHUB</h1>
+
+        <p class="loader-subtitle">
+
+            Explora • Descubre • Juega
+
+        </p>
+
+        <p id="loader-text">
+
+            Inicializando GameHub...
+
+        </p>
+
+        <div class="progress">
+
+            <div id="progress-bar"
+                 class="progress-bar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==================================================
+                    HEADER
+===================================================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <span>GameHub</span>
+
+        </a>
+
+        <ul class="menu">
+
+            <li>
+
+                <a href="index.html">
+
+                    Inicio
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="game.html">
+
+                    Catálogo
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#destacados">
+
+                    Destacados
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#beneficios">
+
+                    Beneficios
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#contacto">
+
+                    Contacto
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!--==================================================
+                    HERO
+===================================================-->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="badge">
+
+            <i class="fa-solid fa-fire"></i>
+
+            Catálogo Gamer 2026
+
+        </span>
+
+        <h1>
+
+            Descubre tu próximo videojuego favorito
+
+        </h1>
+
+        <p>
+
+            Consulta información completa,
+            plataformas, requisitos, calificaciones
+            y accede directamente a la tienda para
+            adquirir tu licencia.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="game.html"
+               class="btn">
+
+                <i class="fa-solid fa-gamepad"></i>
+
+                Explorar catálogo
+
+            </a>
+
+            <a href="#destacados"
+               class="btn btn-outline">
+
+                <i class="fa-solid fa-star"></i>
+
+                Ver destacados
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                DESTACADOS
+===================================================-->
+
+<section id="destacados">
+
+    <div class="section-title">
+
+        <span>
+
+            TOP JUEGOS
+
+        </span>
+
+        <h2>
+
+            Juegos destacados
+
+        </h2>
+
+        <p>
+
+            Algunos de los videojuegos
+            mejor valorados por la comunidad.
+
+        </p>
+
+    </div>
+
+    <div class="contenedor-cards">
+
+           <!-- Cyberpunk -->
+
+        <div class="card">
+
+            <img src="img/cyberpunk.jpg"
+                 alt="Cyberpunk 2077">
+
+            <div class="contenido-card">
+
+                <h3>
+
+                    Cyberpunk 2077
+
+                </h3>
+
+                <p>
+
+                    RPG • Mundo Abierto
+
+                </p>
+
+                <span>
+
+                    ⭐ 9.2 / 10
+
+                </span>
+
+                <a href="game.html"
+                   class="card-btn">
+
+                    Ver catálogo
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Minecraft -->
+
+        <div class="card">
+
+            <img src="img/minecraft.jpg"
+                 alt="Minecraft">
+
+            <div class="contenido-card">
+
+                <h3>
+
+                    Minecraft
+
+                </h3>
+
+                <p>
+
+                    Sandbox • Supervivencia
+
+                </p>
+
+                <span>
+
+                    ⭐ 9.5 / 10
+
+                </span>
+
+                <a href="game.html"
+                   class="card-btn">
+
+                    Ver catálogo
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- RDR2 -->
+
+        <div class="card">
+
+            <img src="img/rdr2.jpg"
+                 alt="Red Dead Redemption 2">
+
+            <div class="contenido-card">
+
+                <h3>
+
+                    Red Dead Redemption 2
+
+                </h3>
+
+                <p>
+
+                    Acción • Mundo Abierto
+
+                </p>
+
+                <span>
+
+                    ⭐ 9.8 / 10
+
+                </span>
+
+                <a href="game.html"
+                   class="card-btn">
+
+                    Ver catálogo
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- God of War -->
+
+        <div class="card">
+
+            <img src="img/gow.jpg"
+                 alt="God of War Ragnarök">
+
+            <div class="contenido-card">
+
+                <h3>
+
+                    God of War Ragnarök
+
+                </h3>
+
+                <p>
+
+                    Acción • Aventura
+
+                </p>
+
+                <span>
+
+                    ⭐ 9.7 / 10
+
+                </span>
+
+                <a href="game.html"
+                   class="card-btn">
+
+                    Ver catálogo
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                BENEFICIOS
+===================================================-->
+
+<section
+id="beneficios"
+class="beneficios">
+
+    <div class="section-title">
+
+        <span>
+
+            ¿POR QUÉ GAMEHUB?
+
+        </span>
+
+        <h2>
+
+            Todo lo que necesitas antes de comprar
+
+        </h2>
+
+        <p>
+
+            Diseñado para que encuentres rápidamente
+            el videojuego perfecto.
+
+        </p>
+
+    </div>
+
+    <div class="beneficios-grid">
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <h3>
+
+                Gran catálogo
+
+            </h3>
+
+            <p>
+
+                Explora juegos populares con
+                información detallada.
+
+            </p>
+
+        </div>
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h3>
+
+                Búsqueda inteligente
+
+            </h3>
+
+            <p>
+
+                Encuentra cualquier videojuego
+                en segundos.
+
+            </p>
+
+        </div>
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>
+
+                Favoritos
+
+            </h3>
+
+            <p>
+
+                Guarda tus juegos favoritos
+                para revisarlos después.
+
+            </p>
+
+        </div>
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h3>
+
+                Compra segura
+
+            </h3>
+
+            <p>
+
+                Accede directamente a la tienda
+                GameVerse para completar tu compra.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                    CONTACTO
+===================================================-->
+
+<section id="contacto" class="contacto">
+
+    <div class="section-title">
+
+        <span>
+
+            CONTACTO
+
+        </span>
+
+        <h2>
+
+            ¿Tienes una recomendación?
+
+        </h2>
+
+        <p>
+
+            Si deseas que agreguemos un videojuego
+            al catálogo, puedes escribirnos.
+
+        </p>
+
+    </div>
+
+    <a href="mailto:gamehub@email.com"
+       class="btn">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        Enviar correo
+
+    </a>
+
+</section>
+
+<!--==================================================
+                    FOOTER
+===================================================-->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-gamepad"></i>
+
+            <span>
+
+                GameHub
+
+            </span>
+
+        </div>
+
+        <p>
+
+            © 2026 GameHub.
+            Proyecto académico desarrollado con HTML, CSS y JavaScript.
+
+        </p>
+
+        <div class="footer-redes">
+
+            <a href="#">
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
